@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
 
+* {
+    font-family: "Be Vietnam Pro", sans-serif;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -8,8 +12,13 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    gap: 5em;
+    gap: 2em;
     background-color: #233142;
+}
+
+h1 {
+    margin-bottom: 0;
+    color: #e3e3e3;
 }
 
 div {
@@ -31,10 +40,15 @@ div {
 }
 
 button {
-    font-family: "Be Vietnam Pro", sans-serif;
-    font-size: 2em;
+    font-size: 1em;
     padding: 0.5em 1em;
     border-radius: 0.5em;
     color: #233142;
     background-color: #e3e3e3;
+    width: 8em;
+}
+
+#btn-container {
+    display: flex;
+    gap: 3em;
 }
