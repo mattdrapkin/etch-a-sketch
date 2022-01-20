@@ -1,24 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Cantarell:ital,wght@1,700&family=Niconne&display=swap');
 
 * {
     font-family: "Be Vietnam Pro", sans-serif;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background-color: #005689;   
     min-height: 100vh;
     margin: 0;
     padding: 0;
+}
+
+body, .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 2em;
-    background-color: #233142;
+}
+
+.container {
+    flex-direction: column;
+    background-color: red;
+    padding: 0.5em;
+    border: 5px solid black;
 }
 
 h1 {
+    font-family: 'Cantarell', sans-serif;
     margin-bottom: 0;
-    color: #e3e3e3;
+    color: white;
+    font-size: 2.5em;
 }
 
 div {
@@ -39,7 +50,7 @@ div {
     background-color: rgb(238, 238, 238);
 }
 
-button {
+#reset-btn, #color-btn {
     font-size: 1em;
     padding: 0.5em 1em;
     border-radius: 0.5em;
@@ -51,4 +62,29 @@ button {
 #btn-container {
     display: flex;
     gap: 3em;
+}
+
+.left-btns, .right-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.size-btn {
+    border-radius: 100px;
+    width: 6em;
+    height: 6em;
+    color: red;
+    font-size: 1.5em;
+    border: 3px solid red;
+}
+
+#top-btn {
+    margin-bottom: 2em;
+}
+
+#bttm-btn {
+    display: flex;
+    gap: 2em;
 }
